@@ -1,0 +1,12 @@
+html, body {
+    height: 100%;
+}
+* {
+    font-size: 1.1rem;
+}
+#root {
+    display: table-cell;
+    justify-content: center;
+}
+
+
