@@ -11,14 +11,104 @@
     <div id="root">
         <div class="menu">
             <ul class="mainMenu" >
-                <li class="show">HOME<a href="home.html" class="n1"></a>
+                <li class="show">HOME<a href="home.html" class="n1" target="iframe"></a>
                 </li>
                 <li class="show">TEACHER
                     <ul class="submenu">
                         <!-- <li><iframe src="qbank.html" frameborder="0" class="n1">MAN</iframe></li> -->
-                        <li><a href="qbank.html" class="n1" target="iframe">Question</a></li>
-                        <li><a href="scores_export.html" class="n1" target="iframe">Trích xuất điểm</a></li>
-                        <li><a href="exam_print.html" class="n1" target="iframe">In bài</a></li>
+                        <li><a href="qbank.html" id="myBtn" class="n1" target="iframe">Question</a>
+                            <div id="myModal" class="modal">
+                                <div class="modal-content">
+                                    <span class="close">&times;</span>
+                                    <input type="text" placeholder="MÃ CODE">
+                                    <button>Submit</button>
+                                </div>
+                                <script>
+                                    //Get the modal 
+                                    var modal = document.getElementById('myModal')
+                                    //Nhận nút button trong phương thức(modal)
+                                    var btn = document.getElementById('myBtn')
+                                    //Lấy phần tử span để đóng phương thức
+                                    var span = document.getElementsByClassName("close")[0];
+                                    //Khi người dùng click vào thì mở phương thức
+                                    btn.onclick = function(){
+                                        modal.style.display = "block";
+                                    }
+                                    //Khi người dùng click vào dấu X hãy đóng phương thức
+                                    span.onclick = function() {
+                                        modal.style.display = "none";
+                                    }
+                                    //KHi người dùng click vào vị trí bất kì nơi nào bên ngoài phương thức hãy đóng
+                                    window.onclick = function(event){
+                                        if(event.target == modal){
+                                            modal.style.display = "none";
+                                        }
+                                    }
+                                </script>
+                            </div>
+                        </li>
+                        <li><a href="scores_export.html" id="myBtn2" class="n1" target="iframe">Trích xuất điểm</a>
+                            <div id="myModal2" class="modal">
+                                    <div class="modal-content">
+                                        <span class="close">&times;</span>
+                                        <input type="text" placeholder="MÃ CODE">
+                                        <button>Submit</button>
+                                    </div>
+                                    <script>
+                                        //Get the modal 
+                                        var modal = document.getElementById('myModal2')
+                                        //Nhận nút button trong phương thức(modal)
+                                        var btn = document.getElementById("myBtn2")
+                                        //Lấy phần tử span để đóng phương thức
+                                        var span = document.getElementsByClassName("close")[0];
+                                        //Khi người dùng click vào thì mở phương thức
+                                        btn.onclick = function(){
+                                            modal.style.display = "block";
+                                        }
+                                        //Khi người dùng click vào dấu X hãy đóng phương thức
+                                        span.onclick = function(){
+                                            modal.style.display = "none";
+                                        }
+                                        //KHi người dùng click vào vị trí bất kì nơi nào bên ngoài phương thức hãy đóng
+                                        window.onclick = function(event){
+                                            if(event.target == modal){
+                                                modal.style.display = "none";
+                                            }
+                                        }
+                                    </script>
+                                </div>                            
+                        </li>
+                        <li><a href="exam_print.html" id="myBtn3" class="n1" target="iframe">In bài</a>
+                            <div id="myModal3" class="modal">
+                                    <div class="modal-content">
+                                        <span class="close">&times;</span>
+                                        <input type="text" placeholder="MÃ CODE">
+                                        <button>Submit</button>
+                                    </div>
+                                    <script>
+                                        //Get the modal 
+                                        var modal = document.getElementById('myModal3')
+                                        //Nhận nút button trong phương thức(modal)
+                                        var btn = document.getElementById("myBtn3")
+                                        //Lấy phần tử span để đóng phương thức
+                                        var span = document.getElementsByClassName("close")[0];
+                                        //Khi người dùng click vào thì mở phương thức
+                                        btn.onclick = function(){
+                                            modal.style.display = "block";
+                                        }
+                                        //Khi người dùng click vào dấu X hãy đóng phương thức
+                                        span.onclick = function(){
+                                            modal.style.display = "none";
+                                        }
+                                        //KHi người dùng click vào vị trí bất kì nơi nào bên ngoài phương thức hãy đóng
+                                        window.onclick = function(event){
+                                            if(event.target == modal){
+                                                modal.style.display = "none";
+                                            }
+                                        }
+                                    </script>
+                                </div>                            
+                        </li>
                     </ul>
                 </li>
                 <li class="show">STUDENT
