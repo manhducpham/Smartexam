@@ -4,6 +4,51 @@ html,body{
 }
 
 /*css của home*/
+<<<<<<< HEAD
+=======
+
+/*start css của Modal*/
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color:brown;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+/*end css của Modal*/
+
+>>>>>>> 1209df78d68d5f1db516cde9772de7035e224a5c
 #root{
     width: 100%;
     height: 100%;
@@ -84,7 +129,11 @@ html,body{
 }
 .submenu{
     position: absolute;
+<<<<<<< HEAD
     background-color: cyan;
+=======
+    background-color:black;
+>>>>>>> 1209df78d68d5f1db516cde9772de7035e224a5c
     opacity: 0.6;
     border-radius: 10px;
     margin: 10 0 0 0;
@@ -162,3 +211,23 @@ input{
 }
 /*end css của qbank*/
 
+<<<<<<< HEAD
+=======
+/*start css của scroes export */
+#scores{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    /* justify-content: center; tác động lên trục dọc */
+    align-items: center;  /*tác động lên trục ngang   */
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+.table{
+    margin-left: 10px;
+}
+/*end css của scroes export*/
+>>>>>>> 1209df78d68d5f1db516cde9772de7035e224a5c

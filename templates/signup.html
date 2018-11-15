@@ -4,18 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../static/signup.css">
     <title>Sign up</title>
 </head>
 <body>
-    <form method="POST">
+    <form class="signup" method="POST">
         <label for="">User ID</label> <br>
-        <input type="text" name = 'user_id'> {{ error }}<br>
+        <input type="text" name = 'user_id' size="25" required=""><br>
         <label for="">Full name</label> <br>
-        <input type="text" name = 'full_name'> <br>
+        <input type="text" name = 'full_name' size="25" required=""> <br>
         <label for="">Email</label> <br>
-        <input type="text" name = 'email'> <br>
+        <input type="text" name = 'email' size="25" required=""> <br>
         <label for="">Password</label> <br>
-        <input type="text" name = 'password'> <br>
+        <input type="password" name = 'password' size="25" required=""> <br> <br>
         <button>Verify</button>
     </form>
 </body>
