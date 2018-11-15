@@ -8,11 +8,11 @@
     <title>Smart Exam Online</title>
 </head>
 <body>
-    <form action="" class="login">
+    <form action="" class="login" method="POST">
         <div id="root">
             <h4>Mời các bạn đăng nhập để sử dụng</h4>
             <br>
-            <h5>{{ error}}</h5>
+            <h5>{{ error }}</h5>
             <br>
             Username: <br>
             <input type="text" name="user_id" size="25" required="">
@@ -20,7 +20,7 @@
             Password: <br>
             <input type="password" name="password" size="25" required=""> <br>
             <br>
-            <button type = 'submit'>Login</button>
+            <button>Login</button>
             <button>
                 <a href="/signup">Sign Up</a>
             </button>

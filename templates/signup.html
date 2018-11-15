@@ -9,12 +9,14 @@
 <body>
     <form method="POST">
         <label for="">User ID</label> <br>
-        <input type="text" name = 'user_id'> <br>
+        <input type="text" name = 'user_id'> {{ error }}<br>
+        <label for="">Full name</label> <br>
+        <input type="text" name = 'full_name'> <br>
         <label for="">Email</label> <br>
         <input type="text" name = 'email'> <br>
         <label for="">Password</label> <br>
         <input type="text" name = 'password'> <br>
-        <button>Create account</button>
+        <button>Verify</button>
     </form>
 </body>
 </html>
